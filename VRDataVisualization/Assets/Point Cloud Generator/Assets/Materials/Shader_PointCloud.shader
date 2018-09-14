@@ -28,7 +28,6 @@
 		float4 color : COLOR;
 		float3 normal : NORMAL;
 		float2 texcoord : TEXCOORD0;
-		float4 size: PSIZE;
 	};
 
 	v2f vert(appdata_full v)
@@ -39,7 +38,6 @@
 		o.texcoord = TRANSFORM_TEX(v.texcoord, _MainTex);
 		o.color = v.color;
 		o.normal = v.normal;
-		o.size = v.size;
 		return o;
 	}
 

@@ -447,6 +447,9 @@ MonoBehaviour:
     X button (left controller)
 
 
+    Y button (left controller)
+
+
     left/right primary trigger (middle finger)
 
 
@@ -699,6 +702,21 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &652346861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 652346859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d18a07ee40bf59642ae837b1320a06c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 50
+  min: 1
+  max: 10
+  size: 5
 --- !u!135 &652346865
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -943,7 +961,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4068199620662606, guid: 3e748f9f3806f864982b6e78fcbaafe8, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.773
+      value: -0.354
       objectReference: {fileID: 0}
     - target: {fileID: 4068199620662606, guid: 3e748f9f3806f864982b6e78fcbaafe8, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1573,10 +1591,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18a07ee40bf59642ae837b1320a06c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  min: 0
-  max: 0
-  size: 0
+  speed: 50
+  min: 0.05
+  max: 5
+  size: 0.2
 --- !u!1 &1789580914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,6 +1755,9 @@ MonoBehaviour:
     recenter view
 
 
+    return object to original position
+
+
     hold trigger to grab object, release trigger to let go
 
 
@@ -1890,7 +1911,7 @@ Prefab:
         type: 2}
       propertyPath: inputFile
       value: 
-      objectReference: {fileID: 4900000, guid: 081609e214fd07846b27359f54dbfebc, type: 3}
+      objectReference: {fileID: 4900000, guid: 6d305193c0e324c4fb69cb398c4639b7, type: 3}
     - target: {fileID: 1883927938679356, guid: 37a25ec9c69993445aecd988a4f54e55, type: 2}
       propertyPath: m_StaticEditorFlags
       value: 18
@@ -1915,7 +1936,12 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 1319418939224794, guid: 37a25ec9c69993445aecd988a4f54e55, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114821444210698198, guid: 37a25ec9c69993445aecd988a4f54e55, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 37a25ec9c69993445aecd988a4f54e55, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1913082193

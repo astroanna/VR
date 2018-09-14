@@ -4,7 +4,7 @@ using UnityEngine.XR;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Controller : MonoBehaviour
+public class ObjectController : MonoBehaviour
 {
     private Vector2 leftThumbstick;
     private Vector2 rightThumbstick;
@@ -45,15 +45,6 @@ public class Controller : MonoBehaviour
     // FixedUpdate is called zero, once, or more times per frame
     private void FixedUpdate()
     {
-        //this.transform.Rotate(new Vector3(leftThumbstick[1], (-1 * leftThumbstick[0]), 0) * Time.deltaTime * speed, Space.World); // rotate cube by thumbstick input
-        //this.transform.Rotate(leftThumbstick[1], (-1 * leftThumbstick[0]), 0, Space.World);
-        /*if (leftThumbstick != Vector2.zero)
-        {
-            m_EulerAngleVelocity = new Vector3(leftThumbstick[1], (-1 * leftThumbstick[0]), 0);
-            deltaRotation = Quaternion.Euler(m_EulerAngleVelocity * speed);
-            rb.MoveRotation(rb.rotation * deltaRotation);
-        }*/
-
         if (rightThumbstick != Vector2.zero)
         {
             float zoom = rightThumbstick[1] / 100;
